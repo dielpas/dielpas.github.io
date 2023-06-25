@@ -1,61 +1,41 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Arial', sans-serif;
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-	background-color: #222;
-	color: #fff;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+h1 {
+    font-size: 48px;
+    margin-top: 100px;
 }
 
-.profile {
-	text-align: center;
-	margin-bottom: 50px;
+p {
+    font-size: 24px;
+    margin-top: 20px;
 }
 
-.profile img {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	object-fit: cover;
-	object-position: center;
-	margin-bottom: 20px;
+.social-links {
+    margin-top: 50px;
 }
 
-.links ul {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+.social-link {
+    display: inline-block;
+    margin: 10px;
 }
 
-.links li {
-	margin: 20px;
+.social-link a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.links a {
-	color: #fff;
-	text-decoration: none;
-	display: flex;
-	align-items: center;
-	position: relative;
+.social-link a:hover {
+    background-color: #fff;
+    color: #222;
 }
-
-.links a:hover {
-	box-shadow: 0 0 0 3px #fff;
-}
-
-.links i {
-	font-size: 1.2em;
-	margin-right: 10px;
-}
-
-/* Add FontAwesome Icons */
-@import url("https://use.fontawesome.com/releases/v5.15.2/css/all.css");
