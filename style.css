@@ -1,41 +1,54 @@
 body {
-    background-color: #222;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 48px;
-    margin-top: 100px;
+  font-size: 48px;
+  margin-top: 50px;
 }
 
 p {
-    font-size: 24px;
-    margin-top: 20px;
+  font-size: 24px;
+  margin-top: 20px;
 }
 
 .social-links {
-    margin-top: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-link {
-    display: inline-block;
-    margin: 10px;
+  margin: 10px;
 }
 
 .social-link a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    border-radius: 25px;
-    transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .social-link a:hover {
-    background-color: #fff;
-    color: #222;
+  background-color: #fff;
+  color: #222;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
